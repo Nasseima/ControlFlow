@@ -63,3 +63,15 @@ week10Radius = Math.sqrt(week10Area/pi)
 console.log(`The radius is ${week10Radius}`)
 
 // Part 3: Errors in Judgement
+//Use Try/Catch
+try {
+    const pi = 3.1415
+    const radius = 5
+    const area = pi * radius * radius
+    week10Area = newInitialPlants * .8
+    if(week10Area > area){
+        throw new Error("Insufficient space for plants.")
+    }
+} catch (error) {
+    console.log(error.message)
+}
